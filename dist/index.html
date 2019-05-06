@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Smartform validator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='bundle.js'></script>
+</head>
+<body class="pt3 pb5 pl5">
+    <div class="qns-container ">
+        <h3>Questions:</h3>
+        <!-- <ul class="nav-tabs">
+            <li class="nav-tabs-item active">Enter data</li>
+            <li class="nav-tabs-item active">Upload file</li>
+        </ul> -->
+        <textarea id="questionsValue" rows="10" col="80" placeholder="Paste CSV here"></textarea>
+    </div>
+    <div class="result-container">
+        <h3>Results:</h3>
+        <textarea id="resultsValue" rows="10" col="80" placeholder="Paste CSV here"></textarea>
+    </div>
+
+    <button id="btnValidate" class="bg-washed-blue pa3 mv3">Validate</button>
+
+    <div class="evaluation"/>
+</body>
+</html>
