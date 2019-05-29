@@ -11,12 +11,17 @@ function validate() {
     container = document.querySelector('.evaluation');
 
     // Clean everything
+    console.log('Clean');
     while (container.firstChild) {
         container.removeChild(container.firstChild);
     }
 
     notUsed = [];
     notFound = [];
+    allId = []; 
+    allResponses = [];
+
+    console.log('notFound2 :', notFound);
 
 
 
@@ -39,6 +44,7 @@ function validate() {
         })
 
         checkNotFound();
+        console.log('notFound :', notFound);
 
         checkResultsNotUsed(datas[1]);
     })
@@ -55,8 +61,6 @@ function checkNotFound() {
 
         if (!found) notFound.push(response);
     })
-
-    console.log('allId :', allId);
 
     
     const heading = document.createElement('h2');
